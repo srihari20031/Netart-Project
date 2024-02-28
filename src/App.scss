@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(#fefbc1, #fefabf);
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .logo {
+    width: 300px;
+  }
+}
+
+.hero {
+  padding: 20px;
+
+  .right-hero {
+    ul {
+      margin-top: 15px;
+    }
+
+    .award-ceremony {
+      margin: 10px;
+    }
+
+    .highlight {
+      font-weight: 700;
+    }
+  }
+  @media (min-width: 80em) {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .left-hero {
+      flex: 1;
+      .award {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+
+    .right-hero {
+      max-width: 1100px;
+      margin-right: 20px;
+
+      flex: 2;
+
+      .award-ceremony {
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 1100px;
+      }
+    }
+  }
+}
+
+.equipments {
+  margin: 15px;
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .equip{
+    
+  }
+  @media (min-width: 40em) {
+    h3 {
+      font-size: 17px;
+      font-weight: 400;
+      margin-top: 30px;
+      margin-left: 40px;
+    }
+
+    .equip {
+      max-width: 1400px;
+
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+  }
+
+  p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .line {
+    border: none;
+    margin: 0px 20px;
+    margin-top: 20px;
+    background: #db2f33;
+    height: 2px;
+  }
+
+  .segments {
+    margin: 10px 80px;
+    h3 {
+      text-align: center;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 17px;
+
+      span {
+        color: #db2f33;
+        font-size: 20px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #db2f33;
+
+  @media (min-width: 40em) {
+    margin: 10px;
+    margin-top: 40px;
+  }
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  color: white;
+  padding: 50px 30px;
+
+  .phone,
+  .facebook,
+  .website {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .icons {
+    font-size: 30px;
+  }
+
+  @media (max-width: 40em) {
+    padding: 10px;
+  }
+}
